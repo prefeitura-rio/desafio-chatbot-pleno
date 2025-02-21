@@ -48,6 +48,10 @@ Uma média ponderada será calculada e os melhores candidatos serão chamados pa
 2. Suba seu código no GitHub, com um README explicando como rodá-lo.
 3. Envie o link do repositório para nossa equipe.
 
+### Data de Entrega
+
+O seu último commit deve ser feito até o dia 26/02/2024 às 23:59 UTC-3.
+
 ## Dúvidas?
 
 Se precisar de qualquer esclarecimento sobre o desafio, entre em contato pelo e-mail brunoalmeida@prefeitura.rio
