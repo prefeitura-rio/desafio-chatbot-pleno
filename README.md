@@ -50,7 +50,7 @@ Uma média ponderada será calculada e os melhores candidatos serão chamados pa
 
 ### Data de Entrega
 
-O seu último commit deve ser feito até o dia 26/02/2024 às 23:59 UTC-3.
+O seu último commit deve ser feito até o dia **26/02/2024 às 23:59 UTC-3**.
 
 ## Dúvidas?
 
