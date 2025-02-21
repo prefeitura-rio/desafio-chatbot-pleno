@@ -21,7 +21,7 @@ O chatbot deve ser capaz de responder a perguntas sobre serviços públicos da c
 Você pode escolher as ferramentas e tecnologias que preferir para desenvolver o chatbot, mas sugerimos considerar:
 
 - **NLP (Processamento de Linguagem Natural)**: Dialogflow, OpenAI GPT, Gemini, ou outra tecnologia de sua escolha.
-- **Scraping/API**: Caso precise extrair informações do site de forma automatizada.
+- **Scraping**: Caso precise extrair informações do site de forma automatizada.
 
 ### Tarefas do Desafio
 
