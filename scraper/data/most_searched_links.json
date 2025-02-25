@@ -1,0 +1,182 @@
+[
+  {
+    "url": "https://carioca.rio/servicos/iptu/",
+    "text": "IPTU 2025",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/parcelamento-emissao-de-boletos-darm-para-pagamento-do-iptu/?_ga=2.100514777.613224067.1668613367-47307370.1667332041",
+    "text": "IPTU 2024 - parcelamento e emissÃ£o de boletos",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/iptu-anos-anteriores/",
+    "text": "IPTU - anos anteriores",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/iptu-certidao-de-situacao-fiscal-e-enfiteutica/",
+    "text": "IPTU - CertidÃ£o de SituaÃ§Ã£o Fiscal e EnfitÃªutica",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/emissao-de-certidao-de-divida-ativa/",
+    "text": "CertidÃ£o da DÃ­vida Ativa Municipal",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/emissao-de-guia-de-pagamento-de-divida-ativa-em-atraso-2/",
+    "text": "Guia de pagamento em Atraso",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/parcelamento-em-divida-ativa/",
+    "text": "Guia para quitaÃ§Ã£o Ã  vista",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-transitorio-de-eventos/",
+    "text": "Parcelamento",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/imoveis-penhorados-como-garantia-para-o-pagamento-de-execucoes-fiscais/",
+    "text": "ImÃ³veis disponÃ­veis para leilÃ£o",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-a-jato/",
+    "text": "AlvarÃ¡ a jato",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/autorizacao-legalizacao-de-comercio-ambulante/",
+    "text": "AutorizaÃ§Ã£o para ambulante",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/consulta-previa-de-local/",
+    "text": "Consulta prÃ©via de AlvarÃ¡",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-transitorio-de-eventos/",
+    "text": "Licenciamento de eventos",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/acesso-a-vigilancia-sanitaria/",
+    "text": "Licenciamento sanitÃ¡rio",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/troca-de-real-infrator/",
+    "text": "Multas - troca de real infrator",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/informacoes-sobre-carga-e-descarga-de-mudancas-residenciais/",
+    "text": "PermissÃ£o de mudanÃ§as",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/defesa-previa-de-autuacao/",
+    "text": "Multas de trÃ¢nsito - Defesa PrÃ©via",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/liberacao-de-veiculos-rebocados/",
+    "text": "LiberaÃ§Ã£o de veÃ­culos rebocados",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/iptu/",
+    "text": "IPTU 2025",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/parcelamento-emissao-de-boletos-darm-para-pagamento-do-iptu/?_ga=2.100514777.613224067.1668613367-47307370.1667332041",
+    "text": "IPTU 2024 - parcelamento e emissÃ£o de boletos",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/iptu-anos-anteriores/",
+    "text": "IPTU - anos anteriores",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/iptu-certidao-de-situacao-fiscal-e-enfiteutica/",
+    "text": "IPTU - CertidÃ£o de SituaÃ§Ã£o Fiscal e EnfitÃªutica",
+    "category": "IPTU"
+  },
+  {
+    "url": "https://carioca.rio/servicos/emissao-de-certidao-de-divida-ativa/",
+    "text": "CertidÃ£o da DÃ­vida Ativa Municipal",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/emissao-de-guia-de-pagamento-de-divida-ativa-em-atraso-2/",
+    "text": "Guia de pagamento em Atraso",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/parcelamento-em-divida-ativa/",
+    "text": "Guia para quitaÃ§Ã£o Ã  vista",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-transitorio-de-eventos/",
+    "text": "Parcelamento",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/imoveis-penhorados-como-garantia-para-o-pagamento-de-execucoes-fiscais/",
+    "text": "ImÃ³veis disponÃ­veis para leilÃ£o",
+    "category": "DÃ­vida ativa"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-a-jato/",
+    "text": "AlvarÃ¡ a jato",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/autorizacao-legalizacao-de-comercio-ambulante/",
+    "text": "AutorizaÃ§Ã£o para ambulante",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/consulta-previa-de-local/",
+    "text": "Consulta prÃ©via de AlvarÃ¡",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/alvara-transitorio-de-eventos/",
+    "text": "Licenciamento de eventos",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/acesso-a-vigilancia-sanitaria/",
+    "text": "Licenciamento sanitÃ¡rio",
+    "category": "Licenciamentos"
+  },
+  {
+    "url": "https://carioca.rio/servicos/troca-de-real-infrator/",
+    "text": "Multas - troca de real infrator",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/informacoes-sobre-carga-e-descarga-de-mudancas-residenciais/",
+    "text": "PermissÃ£o de mudanÃ§as",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/defesa-previa-de-autuacao/",
+    "text": "Multas de trÃ¢nsito - Defesa PrÃ©via",
+    "category": "Outros serviÃ§os"
+  },
+  {
+    "url": "https://carioca.rio/servicos/liberacao-de-veiculos-rebocados/",
+    "text": "LiberaÃ§Ã£o de veÃ­culos rebocados",
+    "category": "Outros serviÃ§os"
+  }
+]

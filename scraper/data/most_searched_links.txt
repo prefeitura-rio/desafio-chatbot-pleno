@@ -1,0 +1,144 @@
+Categoria: IPTU
+Texto: IPTU 2025
+URL: https://carioca.rio/servicos/iptu/
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU 2024 - parcelamento e emissÃ£o de boletos
+URL: https://carioca.rio/servicos/parcelamento-emissao-de-boletos-darm-para-pagamento-do-iptu/?_ga=2.100514777.613224067.1668613367-47307370.1667332041
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU - anos anteriores
+URL: https://carioca.rio/servicos/iptu-anos-anteriores/
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU - CertidÃ£o de SituaÃ§Ã£o Fiscal e EnfitÃªutica
+URL: https://carioca.rio/servicos/iptu-certidao-de-situacao-fiscal-e-enfiteutica/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: CertidÃ£o da DÃ­vida Ativa Municipal
+URL: https://carioca.rio/servicos/emissao-de-certidao-de-divida-ativa/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Guia de pagamento em Atraso
+URL: https://carioca.rio/servicos/emissao-de-guia-de-pagamento-de-divida-ativa-em-atraso-2/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Guia para quitaÃ§Ã£o Ã  vista
+URL: https://carioca.rio/servicos/parcelamento-em-divida-ativa/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Parcelamento
+URL: https://carioca.rio/servicos/alvara-transitorio-de-eventos/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: ImÃ³veis disponÃ­veis para leilÃ£o
+URL: https://carioca.rio/servicos/imoveis-penhorados-como-garantia-para-o-pagamento-de-execucoes-fiscais/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: AlvarÃ¡ a jato
+URL: https://carioca.rio/servicos/alvara-a-jato/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: AutorizaÃ§Ã£o para ambulante
+URL: https://carioca.rio/servicos/autorizacao-legalizacao-de-comercio-ambulante/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Consulta prÃ©via de AlvarÃ¡
+URL: https://carioca.rio/servicos/consulta-previa-de-local/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Licenciamento de eventos
+URL: https://carioca.rio/servicos/alvara-transitorio-de-eventos/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Licenciamento sanitÃ¡rio
+URL: https://carioca.rio/servicos/acesso-a-vigilancia-sanitaria/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: Multas - troca de real infrator
+URL: https://carioca.rio/servicos/troca-de-real-infrator/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: PermissÃ£o de mudanÃ§as
+URL: https://carioca.rio/servicos/informacoes-sobre-carga-e-descarga-de-mudancas-residenciais/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: Multas de trÃ¢nsito - Defesa PrÃ©via
+URL: https://carioca.rio/servicos/defesa-previa-de-autuacao/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: LiberaÃ§Ã£o de veÃ­culos rebocados
+URL: https://carioca.rio/servicos/liberacao-de-veiculos-rebocados/
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU 2025
+URL: https://carioca.rio/servicos/iptu/
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU 2024 - parcelamento e emissÃ£o de boletos
+URL: https://carioca.rio/servicos/parcelamento-emissao-de-boletos-darm-para-pagamento-do-iptu/?_ga=2.100514777.613224067.1668613367-47307370.1667332041
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU - anos anteriores
+URL: https://carioca.rio/servicos/iptu-anos-anteriores/
+--------------------------------------------------
+Categoria: IPTU
+Texto: IPTU - CertidÃ£o de SituaÃ§Ã£o Fiscal e EnfitÃªutica
+URL: https://carioca.rio/servicos/iptu-certidao-de-situacao-fiscal-e-enfiteutica/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: CertidÃ£o da DÃ­vida Ativa Municipal
+URL: https://carioca.rio/servicos/emissao-de-certidao-de-divida-ativa/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Guia de pagamento em Atraso
+URL: https://carioca.rio/servicos/emissao-de-guia-de-pagamento-de-divida-ativa-em-atraso-2/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Guia para quitaÃ§Ã£o Ã  vista
+URL: https://carioca.rio/servicos/parcelamento-em-divida-ativa/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: Parcelamento
+URL: https://carioca.rio/servicos/alvara-transitorio-de-eventos/
+--------------------------------------------------
+Categoria: DÃ­vida ativa
+Texto: ImÃ³veis disponÃ­veis para leilÃ£o
+URL: https://carioca.rio/servicos/imoveis-penhorados-como-garantia-para-o-pagamento-de-execucoes-fiscais/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: AlvarÃ¡ a jato
+URL: https://carioca.rio/servicos/alvara-a-jato/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: AutorizaÃ§Ã£o para ambulante
+URL: https://carioca.rio/servicos/autorizacao-legalizacao-de-comercio-ambulante/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Consulta prÃ©via de AlvarÃ¡
+URL: https://carioca.rio/servicos/consulta-previa-de-local/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Licenciamento de eventos
+URL: https://carioca.rio/servicos/alvara-transitorio-de-eventos/
+--------------------------------------------------
+Categoria: Licenciamentos
+Texto: Licenciamento sanitÃ¡rio
+URL: https://carioca.rio/servicos/acesso-a-vigilancia-sanitaria/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: Multas - troca de real infrator
+URL: https://carioca.rio/servicos/troca-de-real-infrator/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: PermissÃ£o de mudanÃ§as
+URL: https://carioca.rio/servicos/informacoes-sobre-carga-e-descarga-de-mudancas-residenciais/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: Multas de trÃ¢nsito - Defesa PrÃ©via
+URL: https://carioca.rio/servicos/defesa-previa-de-autuacao/
+--------------------------------------------------
+Categoria: Outros serviÃ§os
+Texto: LiberaÃ§Ã£o de veÃ­culos rebocados
+URL: https://carioca.rio/servicos/liberacao-de-veiculos-rebocados/
+--------------------------------------------------

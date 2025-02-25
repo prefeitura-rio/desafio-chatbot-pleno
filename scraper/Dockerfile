@@ -13,4 +13,5 @@ COPY src/ ./src/
 RUN mkdir -p ./data
 
 # Comando para executar o scraper
-ENTRYPOINT ["python", "src/main.py"] 
+ENTRYPOINT ["python", "-m", "src.main"]
+CMD [] 
