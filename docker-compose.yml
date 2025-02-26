@@ -1,1 +1,185 @@
- 
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  # Separate migration services for each microservice
+  auth_migrations:
+    build: 
+      context: ./auth_service
+      dockerfile: Dockerfile
+    command: bash -c "echo 'Running auth service migrations' && cd /app && alembic upgrade head"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@postgres:5432/authdb
+      - JWT_SECRET="1C5+ToBOXxE+Rt6KdPHgJszXYkz3auzNMMQ2OLc3BbEAevOJs91kfqicP5UNAaxd+uI3uI+XLxNFw0y1chkMnw==NRwXkS7S20org-y-QnddtJNI1fUIvYMfQhMUlp5M5bl-5w7Sy8tN2m-kjKTfN2HcKUls0azOcEnjdln2Yhxgw"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app_network
+
+  chat_migrations:
+    build: 
+      context: ./chat_service
+      dockerfile: Dockerfile
+    command: bash -c "echo 'Running chat service migrations' && cd /app && alembic upgrade head"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@postgres:5432/chatdb
+      - JWT_SECRET="1C5+ToBOXxE+Rt6KdPHgJszXYkz3auzNMMQ2OLc3BbEAevOJs91kfqicP5UNAaxd+uI3uI+XLxNFw0y1chkMnw==NRwXkS7S20org-y-QnddtJNI1fUIvYMfQhMUlp5M5bl-5w7Sy8tN2m-kjKTfN2HcKUls0azOcEnjdln2Yhxgw"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app_network
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/nginx/certs
+    depends_on:
+      - auth_service
+      - chat_service
+    restart: always
+    networks:
+      - app_network
+
+  auth_service:
+    build: ./auth_service
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@postgres:5432/authdb
+      - REDIS_URL=redis://redis:6379/0
+      - JWT_SECRET="1C5+ToBOXxE+Rt6KdPHgJszXYkz3auzNMMQ2OLc3BbEAevOJs91kfqicP5UNAaxd+uI3uI+XLxNFw0y1chkMnw==NRwXkS7S20org-y-QnddtJNI1fUIvYMfQhMUlp5M5bl-5w7Sy8tN2m-kjKTfN2HcKUls0azOcEnjdln2Yhxgw"
+      - SKIP_MIGRATIONS=true
+    depends_on:
+      auth_migrations:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: always
+    networks:
+      - app_network
+
+  chat_service:
+    build: ./chat_service
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@postgres:5432/chatdb
+      - REDIS_URL=redis://redis:6379/1
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - OPENROUTER_PROXY_URL=http://or_proxy:8000/v1
+      - JWT_SECRET="1C5+ToBOXxE+Rt6KdPHgJszXYkz3auzNMMQ2OLc3BbEAevOJs91kfqicP5UNAaxd+uI3uI+XLxNFw0y1chkMnw==NRwXkS7S20org-y-QnddtJNI1fUIvYMfQhMUlp5M5bl-5w7Sy8tN2m-kjKTfN2HcKUls0azOcEnjdln2Yhxgw"
+      - SKIP_MIGRATIONS=true
+    depends_on:
+      chat_migrations:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      or_proxy:
+        condition: service_started
+    restart: always
+    networks:
+      - app_network
+      - chatbot-network
+
+  or_proxy:
+    build:
+      context: ./openrouter_proxy_service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - openrouter_proxy_service/.env
+    environment:
+      - OPENROUTER_API_KEY=
+      - OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+      - REDIS_URL=redis://redis:6379/2
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672/
+      - MODEL=meta-llama/llama-3.1-8b-instruct
+      - SECRET_KEY=supersecretkey123
+    depends_on:
+      redis:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - chatbot-network
+      - app_network
+
+  postgres:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_MULTIPLE_DATABASES=authdb,chatdb
+    ports:
+      - "5432:5432"
+    restart: always
+    command: ["postgres", "-c", "shared_preload_libraries=pg_stat_statements"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_network
+      - chatbot-network
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    restart: always
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_network
+      - chatbot-network
+
+  rabbitmq:
+    image: rabbitmq:3.12-management
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    ports:
+      - "5672:5672"   # AMQP port
+      - "15672:15672" # Management interface
+    environment:
+      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit feature_flags_file "/var/lib/rabbitmq/feature_flags"
+    restart: always
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - app_network
+      - chatbot-network
+
+volumes:
+  postgres_data:
+  redis_data:
+  rabbitmq_data:
+
+networks:
+  app_network:
+    driver: bridge
+  chatbot-network:
+    driver: bridge
